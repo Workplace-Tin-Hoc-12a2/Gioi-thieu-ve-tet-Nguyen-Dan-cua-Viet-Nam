@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Log in</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #f4f6f9;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      width: 360px;
+      height: 360px;
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      position: relative;
+    }
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 26px;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 12px 0;
+      font-size: 15px;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background: #2f5bea;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .close {
+      position: absolute;
+      top: 12px;
+      right: 15px;
+      font-size: 28px;
+      font-weight: bold;
+      color: red;
+      text-decoration: none;
+
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 50%;
+    }
+
+    .close:hover {
+      background: #ffe5e5;
+    }
+
+    .login-box p {
+      text-align: center;
+      margin-top: 18px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="login-box">
+
+  <a href="index.html" class="close">×</a>
+
+  <h2>Đăng nhập</h2>
+
+  <input type="text" placeholder="Tên đăng nhập">
+  <input type="password" placeholder="Mật khẩu">
+
+  <button>Đăng nhập</button>
+
+  <p>
+    Bạn chưa có tài khoản?
+    <a href="#">Đăng kí</a>
+  </p>
+
+</div>
+
+</body>
+</html>
