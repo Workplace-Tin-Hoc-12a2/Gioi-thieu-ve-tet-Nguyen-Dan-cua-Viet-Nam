@@ -1,9 +1,9 @@
-
 .banner {
     background: url("img/anhnen.jpg") no-repeat center center;
     background-size: cover;
-    padding: 8rem 1rem;    
-    color: darkred;
+    padding-top: 17rem;
+    padding-bottom: 17rem;
+    color: darkred !important;
 }
 
 
@@ -12,49 +12,44 @@
     width: 100%;
 }
 
-
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    padding: 2rem 3rem;
-    background-color: lightgrey;
-    gap: 1.5rem;     
+display: flex;
+flex-wrap: wrap;
+margin-top: -1;
+max-width: 100%;
+padding-right: 3rem;
+padding-left: 3rem;
+background-color: lightgrey;
 }
-
 
 .block_3 {
-    flex: 1 1 30%;
-    margin: 0;
+    flex: 0 0 auto;
+    width: 30%;
+    margin: 10px;
 }
-
 
 footer {
     background-color: lightgrey;
-    margin: 0;
-    padding: 1rem;
+    margin: 1px;
+    padding: 10px;
 }
-
 
 .link {
     color: navy;
+    text-align: left;
 }
 
-
-.cell_img {
-    width: 50%;
-}
+.cell_img {width: 50%;}
 
 .cell_text {
     width: 50%;
-    padding-left: 3rem;    
-    font-size: 1.1rem;
+    padding-left: 15rem;
+    font-size: 20px;
 }
 
 .img {
     width: 100%;
-    height: auto;          
-    display: block;
+    height: 100%;
 }
 
 .menu {
@@ -62,11 +57,14 @@ footer {
     text-decoration: none;
 }
 
-body {
-    font-size: 18px;
-    margin: 0;
+.cell {
+    text-align: justify;
+    padding: 1.5em;
 }
 
+body {
+    font-size: 17px;
+}
 .login-link {
     background: rgb(0, 83, 139);
     color: white;
@@ -75,29 +73,4 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
-@media (max-width: 768px) {
 
-    .banner {
-        padding: 4rem 1rem;
-    }
-
-    .row {
-        padding: 1.5rem 1rem;
-    }
-
-    .block_3 {
-        flex: 1 1 100%;
-        text-align: center;
-    }
-
-    .cell_text,
-    .cell_img {
-        width: 100%;
-        padding-left: 0;
-        text-align: center;
-    }
-
-    body {
-        font-size: 16px;
-    }
-}
