@@ -1,9 +1,9 @@
+
 .banner {
     background: url("img/anhnen.jpg") no-repeat center center;
     background-size: cover;
-    padding-top: 17rem;
-    padding-bottom: 17rem;
-    color: darkred !important;
+    padding: 8rem 1rem;    
+    color: darkred;
 }
 
 
@@ -12,40 +12,49 @@
     width: 100%;
 }
 
+
 .row {
-display: flex;
-flex-wrap: wrap;
-margin-top: -1;
-max-width: 100%;
-padding-right: 3rem;
-padding-left: 3rem;
-background-color: lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 2rem 3rem;
+    background-color: lightgrey;
+    gap: 1.5rem;     
 }
 
+
 .block_3 {
-    flex: 0 0 auto;
-    width: 30%;
-    margin: 10px;
+    flex: 1 1 30%;
+    margin: 0;
 }
+
 
 footer {
     background-color: lightgrey;
-    margin: 1px;
-    padding: 10px;
+    margin: 0;
+    padding: 1rem;
 }
+
 
 .link {
     color: navy;
-    text-align: left;
 }
 
-.cell_img {width: 50%;}
 
-.cell_text { width: 50%; padding-left: 5rem;}
+.cell_img {
+    width: 50%;
+}
+
+.cell_text {
+    width: 50%;
+    padding-left: 3rem;    
+    font-size: 1.1rem;
+}
 
 .img {
     width: 100%;
-    height: 100%;
+    height: auto;          
+    display: block;
 }
 
 .menu {
@@ -53,13 +62,9 @@ footer {
     text-decoration: none;
 }
 
-.cell {
-    text-align: justify;
-    padding: 1.5em;
-}
-
 body {
     font-size: 18px;
+    margin: 0;
 }
 
 .login-link {
@@ -70,13 +75,29 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
+@media (max-width: 768px) {
 
+    .banner {
+        padding: 4rem 1rem;
+    }
 
+    .row {
+        padding: 1.5rem 1rem;
+    }
 
+    .block_3 {
+        flex: 1 1 100%;
+        text-align: center;
+    }
 
+    .cell_text,
+    .cell_img {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
 
-
-
-
-
-
+    body {
+        font-size: 16px;
+    }
+}
