@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Firebase</title>
+</head>
+<body>
+
+<h2>Đăng ký</h2>
+<input id="email" type="email" placeholder="Email"><br>
+<input id="password" type="password" placeholder="Mật khẩu"><br>
+<button onclick="register()">Đăng ký</button>
+
+<h2>Đăng nhập</h2>
+<button onclick="login()">Đăng nhập</button>
+
+<h2>Quên mật khẩu</h2>
+<button onclick="resetPassword()">Quên mật khẩu</button>
+
+<h2>Đăng nhập Google</h2>
+<button onclick="loginGoogle()">Login Google</button>
+
+<script type="module" src="auth.js"></script>
+</body>
+</html>
